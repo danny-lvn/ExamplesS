@@ -11,5 +11,9 @@ WriteLine("Enter n1");
 int n1 = Convert.ToInt32(ReadLine());
 WriteLine("Enter n2");
 int n2 = Convert.ToInt32(ReadLine());
-if ((n1 % n2) == 0) WriteLine("кратно");
-else WriteLine($"не кратно, остаток {n1 % n2}");
+if (n1 > n2)
+{
+    if ((n1 % n2) == 0) WriteLine("кратно");
+    else WriteLine($"не кратно, остаток {n1 % n2}");
+}
+else WriteLine("Enter n1 > n2");
