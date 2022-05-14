@@ -15,6 +15,6 @@ int N = Convert.ToInt32(ReadLine());
 int i = 1;
 while (i <= N)
 {
-    Write($"{Math.Pow(i, 2)} ");
+    Write(Math.Pow(i, 2));
     i++;
 }
