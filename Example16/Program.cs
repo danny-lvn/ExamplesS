@@ -6,12 +6,15 @@ using System;
 using static System.Console;
 
 Clear();
-arr();
 
-void arr()
+WriteLine("Enter a length of array");
+int l = Convert.ToInt32(ReadLine());
+arr(l);
+
+void arr(int l)
 {
-    int[] r = new int[8];
-    for (int i = 0; i < 8; i++)
+    int[] r = new int[l];
+    for (int i = 0; i < l; i++)
     {
         r[i] = new Random().Next(2);
     }
