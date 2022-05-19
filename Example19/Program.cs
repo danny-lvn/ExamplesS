@@ -13,6 +13,7 @@ Clear();
 int[] array = GetArray(12, -9, 9);
 WriteLine(String.Join(" ", array));
 WriteLine(NiA(4, array));
+WriteLine(NiA2(4, array) ? "Yes" : "No");
 
 int[] GetArray(int size, int minValue, int maxValue)
 {
@@ -37,4 +38,16 @@ string NiA(int num, int[] array)
         }
     }
     return res;
+}
+
+bool NiA2(int num, int[] array)
+{
+    foreach (int el in array)
+    {
+        if (el == num)
+        {
+            return true;
+        }
+    }
+    return false;
 }
