@@ -19,7 +19,6 @@ WriteLine($"{N} -> {String.Join(" ", FibMeth(N))}");
 int[] FibMeth(int num)
 {
     int[] FibRow = new int[num];
-    FibRow[0] = 0;
     FibRow[1] = 1;
     for (int i = 2; i < num; i++) FibRow[i] = FibRow[i - 2] + FibRow[i - 1];
     return FibRow;
